@@ -1,6 +1,8 @@
 # Project description
 </br>
 Learn best Linear Regression model on housing data using RFECV feature selection. </br> 
+Model 1: default features </br>
+Model 2: with polynomial features (degree 2)
 
 # Feature visualizations - examples
 
@@ -23,11 +25,11 @@ Optimal number of features: 13
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_rfecv_feature_selection.png)
 
-# Model summary 
+## Model summary 
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_summ.png)
 
-# Regression diagnostics - on test set
+## Regression diagnostics - on test set
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_test_residuals_hist.png)
 
@@ -39,17 +41,18 @@ Optimal number of features: 13
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_test_residuals_vs_y.png)
 
-# RFECV result
-Optimal number of features: 120
+# Model 2
+## RFECV result
+Optimal number of features: 118
 </br>
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model2_rfecv_feature_selection.png)
 
-# Model summary 
+## Model summary 
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model2_summ.png)
 
-# Regression diagnostics - on test set
+## Regression diagnostics - on test set
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model2_test_residuals_hist.png)
 
