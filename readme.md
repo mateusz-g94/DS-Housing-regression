@@ -72,3 +72,7 @@ Optimal number of features: 118
 
 </br> 
 Graph shows model improvment compared to model 1 without polynomial features. 
+
+# Model comparision
+
+
