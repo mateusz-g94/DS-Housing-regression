@@ -25,3 +25,15 @@ Optimal number of features: 13
 # Model summary 
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_summ.png)
+
+# Regression diagnostics - on test set
+
+![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_test_residuals_hist.png)
+
+</br>
+
+![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_test_y_vs_prediction.png)
+
+</br>
+
+![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_test_residuals_vs_y.png)
