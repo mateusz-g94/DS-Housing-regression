@@ -16,7 +16,8 @@ Learn best Linear Regression model on housing data using RFECV feature selection
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/corr.png)
 
-# RFECV result
+# Model 1
+## RFECV result
 Optimal number of features: 13
 </br>
 
