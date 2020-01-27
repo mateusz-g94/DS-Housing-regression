@@ -1,6 +1,6 @@
 # Project description
 </br>
-Learn best Linear Regression model on housing data using RFECV feature selection. </br> 
+Learn best Linear Regression model on housing data using RFECV feature selection. </br> </br>
 Model 1: default features </br>
 Model 2: with polynomial features (degree 2)
 
@@ -42,7 +42,7 @@ Optimal number of features: 13
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_test_residuals_vs_y.png)
 
 </br>
-Graph shows that error increases with increasing price. This leads to hypotesis that the form of the model isn't linear. Adding polynomial features should lead to model improvment. We can expect that price of expensive apartments depends on other factors then the price of cheap apartments.  
+Graph shows that error increases with increasing price. This leads to hypotesis that accepted form of the model isn't linear. Adding polynomial features should lead to model improvment. We can expect that price of expensive apartments depends on other factors then the price of cheap apartments.  
 
 # Model 2
 ## RFECV result
