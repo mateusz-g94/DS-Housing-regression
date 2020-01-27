@@ -29,6 +29,9 @@ Optimal number of features: 13
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_summ.png)
 
+</br>
+Based on t-statistics, all features are statisticaly significant. 
+
 ## Regression diagnostics - on test set
 
 ![alt text](https://github.com/mateusz-g94/DS-Housing-regression/blob/master/grp/model1_test_residuals_hist.png)
