@@ -45,7 +45,7 @@ def train_test():
     
     # Compare results
     slow = {'model1_train' : model1_train_results, 'model1_test' : model1_test_results, 'model2_train': model2_train_results, 'model2_test' : model2_test_results}
-    LinearRegressionFS.compare_results(slow)
+    LinearRegressionFS.compare_results(slow, save_path = GRP_PATH + 'comp_results.png')
     
 if __name__ == '__main__':
     train_test()

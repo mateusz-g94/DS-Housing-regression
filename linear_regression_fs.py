@@ -15,6 +15,7 @@ from sklearn.model_selection import KFold
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error
 import statsmodels.api as sm
+from pandas.plotting import table
 
 sn.set(style = 'whitegrid', palette = 'muted', color_codes = True)
 plt.style.use('seaborn-whitegrid')
@@ -38,7 +39,7 @@ class LinearRegressionFS(LinearRegression):
                 # Plot number of features VS. cross-validation scores
                 plt.figure(figsize = figsize)
                 plt.xlabel("Number of features selected")
-                plt.ylabel("Cross validation score (nb of correct classifications)")
+                plt.ylabel("Cross validation score (neg mean squared error)")
                 plt.plot(range(1, len(rfecv.grid_scores_) + 1), rfecv.grid_scores_)
                 if save_path != None:
                     plt.savefig(save_path + 'rfecv_feature_selection.png')
@@ -63,16 +64,20 @@ class LinearRegressionFS(LinearRegression):
             return X[self.column_names_]
         else:
             raise TypeError('Unsuported data structure.')
-            
-    def _plot_text_to_png(self, data, path):
+    
+    @staticmethod        
+    def plot_text_to_png(data, path, figsize = (12,10)):
         fig, ax = plt.subplots(figsize = figsize)
-        plt.text(0.01, 0.05, str(data), {'fontsize': 10}, fontproperties = 'monospace')
+        if isinstance(data, pd.DataFrame):
+            table(ax, data, loc = 'upper left')
+        else:
+            plt.text(0.01, 0.05, str(data), {'fontsize': 10}, fontproperties = 'monospace')
         plt.axis('off')
         plt.tight_layout()
         plt.savefig(path)
     
     @staticmethod    
-    def compare_results(results = {}):
+    def compare_results(results = {}, save_path = None):
         df = pd.DataFrame()
         MSE = []
         R2 = []
@@ -166,9 +171,10 @@ class LinearRegressionFS(LinearRegression):
         if self.fit_intercept:
             X_ = sm.add_constant(X_)
         sm_model = sm.OLS(y, X_).fit()
+        return sm_model
         print(sm_model.summary())
         if save_path != None:
-            self._plot_text_to_png(data = sm_model.summary(), path = save_path)
+            self.plot_text_to_png(data = sm_model.summary(), path = save_path)
         
     
     
