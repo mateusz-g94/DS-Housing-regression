@@ -75,11 +75,13 @@ Graph shows model improvment compared to model 1 without polynomial features.
 
 # Model comparision
 
+</br>
+
 | names | MSE | R2 | n_features |
 | ---- | ----- | --- | ---|
-| model1_train | 4.873707e+10 | 0.636 | 13 |
-| model1_test | 4.888282e+10 | 0.648 | 13 |
-| model2_train | 3.609758e+10 | 0.730 | 119 |
-| model2_test | 3.699494e+10 | 0.734 | 119 |
+| model1_train | 4.87e+10 | 0.636 | 13 |
+| model1_test | 4.89e+10 | 0.648 | 13 |
+| model2_train | 3.61e+10 | 0.730 | 119 |
+| model2_test | 3.70e+10 | 0.734 | 119 |
 
 
